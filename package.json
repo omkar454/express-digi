@@ -1,0 +1,24 @@
+{
+  "name": "05_own_express",
+  "version": "1.0.0",
+  "description": "A tea app made by own",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "chai",
+    ".",
+    "omkar"
+  ],
+  "author": "Omkar raut",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
