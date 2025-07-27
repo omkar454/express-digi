@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A tea app made by own",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
@@ -16,6 +16,7 @@
   "author": "Omkar raut",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^17.2.1",
     "express": "^5.1.0"
   },
   "devDependencies": {

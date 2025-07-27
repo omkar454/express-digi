@@ -1,4 +1,7 @@
 import express from "express";
+import dotenv from "dotenv";
+
+dotenv.config({ path: "./.env" });
 
 const app = express();
 
@@ -6,7 +9,7 @@ app.use(express.json());
 
 let teas = [];
 let nextId = 1;
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // add tea
 app.post("/teas", (req, res) => {
@@ -61,5 +64,5 @@ app.delete("/teas/:id", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server started at ${port}`);
+  console.log(`Server started at ${port}...`);
 });
